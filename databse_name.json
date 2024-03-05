@@ -1,0 +1,45 @@
+{
+   "template": {
+      "type": "",
+      "est": {
+         "nchains": "",
+         "nsamples": "",
+         "done": 0
+      },
+      "name": "template__",
+      "lmm": {
+         "dep_var": "",
+         "fxeff": [
+            ""
+         ],
+         "rneff": [
+            ""
+         ]
+      },
+      "location": ""
+   },
+   "sleepstudy_maximum_model_2_1000": {
+      "type": "",
+      "est": {
+         "nchains": 2,
+         "nsamples": 1000,
+         "done": 0,
+         "ncores": 2
+      },
+      "name": "sleepstudy_maximum_model_2_1000",
+      "lmm": {
+         "dep_var": "Reaction",
+         "fxeff": [
+            "Days"
+         ],
+         "rneff": [
+            "Days|Subject"
+         ],
+         "eq": "Reaction ~ 0 + Days + (Days|Subject)"
+      },
+      "location": "/data/drive/postdoc/bambi-test/models/sleepstudy_maximum_model_2_1000.dic",
+      "model_obj": "",
+      "data": "",
+      "model_folder": "/data/drive/postdoc/bambi-test/models"
+   }
+}
